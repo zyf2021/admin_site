@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div><h2 class="shadow"><a href="index.html">Администрация города N</a></h2></div>
+	</header>
+	<main>
+	 <nav class="horiz">
+			<ul class = "topmenu">
+				<li><a href="index.html" class="active">Главная</a></li>
+				<li><a href="administration.html">Администрация</a>
+					<ul class = "submenu">
+					<li><a href="director.html">Глава города</a></li>
+					<li><a href="struct.html">Структура</a></li>
+					<li><a href="municip_service.html">Муниципальные службы</a></li>
+					</ul> 
+				</li>
+				<li><a href="news.php">Новости</a>
+					<ul class = "submenu">
+					<li><a href="#">Социальная сфера</a></li>
+					<li><a href="#">Городская сфера</a></li>
+					<li><a href="searh.php">Поиск по новостям</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Приемная</a>
+					<ul class = "submenu">
+					<li><a href="#">Расписание приема</a></li>
+					<li><a href="form_appointment.php">Запись на прием</a></li>
+					</ul>
+				</li>
+				<li><a href="documents.php">Документы</a>
+				<ul class = "submenu">
+					<li><a href="#">Устав города</a></li>
+					<li><a href="#">Регламент администрации</a></li>
+					<li><a href="#">Правила землепользования</a></li>
+					<li><a href="#">Муниципальные программы</a></li>
+					<li><a href="#">Поиск по документам</a></li>
+					</ul>
+				</li>
+				<li><a href="register.html">Регистрация/Вход</a>
+					
+				</li>
+				<li class = "search">
+					<form action="searh.php" method="post">
+					<input type="search" name="query_str_main" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти"></li>
+					</form>
+
+			</ul>
+		</nav>
+		<table>
+			<tbody>
+				<tr>
+				<td>
+					<p class="center">Структура администрации города</p>
+					<nav class = "two">
+						<p><a href="#">Подразделение1</a></p>
+						<p><a href="#">Подразделение2</a></p>
+						<p><a href="#">Подразделение3</a></p>
+						<p><a href="#">Подразделение4</a></p>
+						<p><a href="#">Подразделение5</a></p>
+						<p><a href="searh.php">SEARCH</a></p>
+						<p><a href="register.html">Register</a></p>
+						<p><a href="index.php">Main</a></p>
+				    </nav>	
+				</td>
+				<td>						
+					<div class="news">
+						<h3><a href="news.php">Новости</a></h3>
+						<article>
+							<div class="name">
+								<a href="#">Неизвестная статья 1</a>
+							</div>
+							<div>
+								<p class = "text">Morbi cursus massa purus, a rhoncus nulla sagittis eu. Donec varius sapien vitae felis dignissim, vitae dapibus nisl aliquam. Cras nec velit aliquam, tincidunt ante at, cursus dolor. Quisque vel posuere justo. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eu velit purus. 
+								</p>
+								<p class = "img">
+									<img src="photo1.png" alt="Город" width="100" height="100">
+								</p>
+							</div>
+						</article>
+						<article>
+							<div class="name">
+								<a href="#">Неизвестная статья 2</a>
+							</div>
+							<div>
+								<p class = "text">
+									Ut congue nibh sed ultrices sagittis. Nam vitae metus in ligula tempus auctor. Donec iaculis ipsum ut enim porttitor, sit amet vulputate metus dignissim. Morbi posuere, justo lacinia lacinia porta, dui risus tincidunt felis, eget porttitor urna massa sed diam. Nullam faucibus congue sodales.  
+								</p>
+								<p class = "img">
+									<img src="photo1.png" alt="Город" width="100" height="100">
+								</p>
+							</div>
+						</article>
+					</div>
+				</td>
+				</td>
+				<td>
+					<p class="center">Важное</p>
+					<nav class = "two">
+						<p><a href="#">Объявление1</a></p>
+						<p><a href="#">Объявление2</a></p>
+						<p><a href="#">Объявление3</a></p>
+						<p><a href="#">Объявление4</a></p>
+						<p><a href="#">Объявление5</a></p>
+					</nav>
+				</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+	<footer>
+		<div class="wrapper">
+		<div class="left">
+			<p>Контактная информация:</p>
+			<p>Телефон приемной 89997776655</p>
+			<p>Техподдержка e-mail helpme@cherty.ru</p>
+		</div>
+		<div class="right">
+			<p>Адрес:</p>
+			<p>ул. Центральная д. 46</p>
+			<p><a href="order.php">About</a></p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?php
+    //Подключение шапки
+    require_once("header.php");
+?>		<div class="center_vertical">
+			<div>
+			<form name = "form" method="post" action="news.php" onsubmit="return validate_form()">
+				<select name = "type_news">
+					<option value="0">Все новости</option>
+					<option value="1">Городская сфера</option>
+					<option value="2">Социальная сфера</option>
+					<option value="3">Поиск по новостям</option>
+				</select>
+				<input type="submit" name="mybt" value="Выбрать"></p>
+			</form>
+			</div>
+			<div class="string">
+				<div class = "text">
+					Morbi cursus massa purus, a rhoncus nulla sagittis eu. Donec varius sapien vitae felis dignissim, vitae dapibus nisl aliquam. Cras nec velit aliquam, tincidunt ante at, cursus dolor. Quisque vel posuere justo. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eu velit purus
+				</div>
+				<div class="img">
+					<img src="photo1.png" title="Фото директора">
+				</div>
+			</div>
+			<div class="string">
+				<div class = "text">
+					Morbi cursus massa purus, a rhoncus nulla sagittis eu. Donec varius sapien vitae felis dignissim, vitae dapibus nisl aliquam. Cras nec velit aliquam, tincidunt ante at, cursus dolor. Quisque vel posuere justo. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eu velit purus
+				</div>
+				<div class="img">
+					<img src="photo1.png" title="Фото директора">
+				</div>
+			</div>
+			<div class="string">
+				<div class = "text">
+					Morbi cursus massa purus, a rhoncus nulla sagittis eu. Donec varius sapien vitae felis dignissim, vitae dapibus nisl aliquam. Cras nec velit aliquam, tincidunt ante at, cursus dolor. Quisque vel posuere justo. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eu velit purus
+				</div>
+				<div class="img">
+					<img src="photo1.png" title="Фото директора">
+				</div>
+			</div>
+			<nav class="pagenav">
+							<ul>
+								<li class="first"><a href="#">prev</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="last"><a href="#">next</a></li>								
+							</ul>
+			</nav>
+		</div>
+	</main>
+	<?php
+    //Подключение подвала
+    require_once("footer.php");
+?>

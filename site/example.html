@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<? php
+		$db = "mydb";
+		$link = mysql_pconnect();
+		if (!$link)
+			die("Impossible connect");
+		mysql_select_db($db) or die("Impossible open db");
+		$query = "INSERT INTO tovar
+				  VALUES(1,'хлеб', 20, 1)";
+	    mysql_query($query);
+	    mysql_close($link);
+	?>
+</body>
+</html>

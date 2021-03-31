@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://site/form_appointment.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Город N</title>
+	<link rel="stylesheet" type="text/css" href="./Город N_files/style.css">
+	
+
+	
+</head>
+<body>
+	<header>
+		<div><h2 class="shadow"><a href="http://site/index.html">Администрация города N</a></h2></div>
+	</header>
+	<main>
+	
+	 <nav class="horiz">
+			<ul class="topmenu">
+				<li><a href="http://site/index.php">Главная</a></li>
+				<li><a href="http://site/administration.php">Администрация</a>
+					<ul class="submenu">
+					<li><a href="http://site/director.php">Глава города</a></li>
+					<li><a href="http://site/struct.php">Структура</a></li>
+					<!--<li><a href="municip_service.php">Муниципальные службы</a></li>-->
+					</ul> 
+				</li>
+				<li><a href="http://site/news.php">Новости</a>
+					<ul class="submenu">
+					<li><a href="http://site/news1.php">Социальная сфера</a></li>
+					<li><a href="http://site/news2.php">Городская сфера</a></li>
+					<li><a href="http://site/search_news.php">Поиск по новостям</a></li>
+					</ul>
+				</li>
+				<li><a href="http://site/form_appointment.php#" class="active">Приемная</a>
+					<ul class="submenu">
+					<li><a href="http://site/form_appointment.php#">Расписание приема</a></li>
+					
+					<li><a href="http://site/form_appointment.php">Запись на прием</a></li>					</ul>
+				</li>
+				<li><a href="http://site/documents.php">Документы</a>
+				<ul class="submenu">
+					<li><a href="http://site/documents1.php">Устав города</a></li>
+					<li><a href="http://site/documents2.php">Регламент администрации</a></li>
+					<li><a href="http://site/documents3.php">Правила землепользования</a></li>
+					<li><a href="http://site/documents4.php">Муниципальные программы</a></li>
+					<li><a href="http://site/search_documents.php">Поиск по документам</a></li>
+					</ul>
+				</li>
+				<li><a href="http://site/logout.php">Выход</a>						
+				</li><li class="search">
+					<form action="http://site/search.php" method="post">
+					<input type="search" name="query_str_main" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти"></form></li>
+					
+
+			</ul>
+		</nav><div class="block_for_messages">
+    <p class="mesage_error">Ошибка запроса на добавления обращения в БД</p></div>
+		<div class="center_horizontal">
+			<form name="form_appointment" method="post" action="http://site/appointment.php" onsubmit="return validate_form()">
+				<p>Фамилия *</p>
+				<p><input type="text" name="last_name" size="20" placeholder="Фамилия" required=""></p>
+				<p>Имя *</p>
+				<p><input type="text" name="first_name" size="20" placeholder="Имя" required=""></p>
+				<p>Отчество *</p>
+				<p><input type="text" name="middle_name" size="20" placeholder="Отчество" required=""></p>
+				<p>Телефон </p>
+				<p><input type="text" id="phone" name="phone" size="20" title="Номер телефона только цифры" required="" pattern="[0-9]{11}"></p>
+				<p>e-mail*</p>
+				<p><input type="email" name="email" placeholder="e-mail" required=""></p>
+				<p>Подразделение</p>
+				<p><select name="depart">
+						<option value="">Выберите подразделение</option>
+						<option value="1">Подразделение 1</option>
+						<option value="2">Подразделение 2</option>
+						<option value="3">Подразделение 3</option>
+					</select></p>
+				<p>Текст обращения </p>
+				<p><textarea name="text" cols="50" rows="6"></textarea></p>			
+				<p>Направить ответ на обращение (выберите один способ)</p>
+				<p>Направить письмо по почте  <input type="radio" name="vr" value="vr1"></p>
+				<p>Направить письмо по e-mail <input type="radio" name="vr" value="vr2"></p>
+				<p>Вы даете соглсие на обработку ваших данных?</p>
+				<p> Да <input type="checkbox" name="terms" value="yes"></p>
+				<p>Отправить обращение <input type="submit" name="mybt" value="Отправить"></p>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper">
+		<div class="left">
+			<p>Контактная информация:</p>
+			<p>Телефон приемной 89997776655</p>
+			<p>Техподдержка e-mail helpme@cherty.ru</p>
+		</div>
+		<div class="right">
+			<p>Адрес:</p>
+			<p>ул. Центральная д. 46</p>
+			<p><a href="http://site/about.php">About</a></p>
+		</div>
+		</div>
+	</footer>
+<script type="text/javascript">
+
+function validate_form ()
+{
+	valid = true;
+
+        if ( ( document.form_appointment.vr[0].checked == false ) && 
+        	 ( document.form.vr[1].checked == false ) )
+        {
+                alert ( "Пожалуйста, выберите способ отправки ответа на ваше обращение" );
+                valid = false;
+        }
+
+        if ( document.form_appointment.depart.selectedIndex == 0 )
+        {
+                alert ( "Пожалуйста, выберите подразделение" );
+                valid = false;
+        }
+
+        if ( document.form_appointment.terms.checked == false )
+        {
+                alert ( "Пожалуйста, отметьте согласие с Соглашением." );
+                valid = false;
+        }
+	return valid;
+}
+</script>
+
+</body></html>

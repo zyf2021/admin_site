@@ -1,0 +1,116 @@
+header{
+	background: lightblue;
+	padding: 40px;
+	margin: 10px;
+}
+
+h2{
+	text-align: left;
+	font-size: 24pt;
+	font-family: Bookman, Times, serif,
+}
+.text-shadow-11 {
+  color: teal; 
+  text-shadow: 1px 1px 1px white, 2px 2px 3px gray;
+}
+main{
+	width: auto;
+	background: white;
+	padding: 0;
+	margin: 10px;
+	color: black;
+}
+footer{
+	background: teal;
+	clear: both;
+	color: white;
+	height: 150px;
+	margin: 10px;
+	padding: 10px;
+}
+/*начало меню*/
+nav.horiz{
+	margin: 0px;
+	padding-left: 0%;
+	text-align: center;
+	width: auto;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	width: auto;
+
+}
+ul.topmenu{
+	display: table;
+	height: 40px;
+  	position: relative;
+  	width: 105%;
+}
+ul.topmenu li{
+	background: lightblue;
+	float: left;
+	height: 30px;
+	list-style: none;
+	margin-right: 2px;
+	width: 15.5%;/*простите меня*/
+}
+ul.topmenu li.search{
+	width: 16.9%;/*простите меня*/
+}
+ul.topmenu li a{
+	display: block;
+	font-weight: bolder;
+	margin: 0;
+  	padding: 6px;
+}
+ul.topmenu li a.active{
+	background: #8FBC8F;
+}
+ul.submenu{
+	display: none;
+}
+ul.submenu li{
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+ul.submenu li a:hover{
+	/*background-color: #8FBC8F;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+ul.topmenu li:hover{
+	position: relative;
+	background-color: #8FBC8F;
+}
+ul.topmenu li:hover > .submenu {
+  /*border-top: 1px solid white;*/
+  display: inline-block;
+  margin: 5px;
+  position: absolute;
+  top: 27px; /*первый уровень меню раскрывается вниз*/
+  left: 0px;
+}/*конец меню*/
+
+footer div.wrapper{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+footer div{
+	float: left;
+	margin: 5px;
+	width: 200px;
+}
+footer div.right{
+	float: right;	
+}
+footer p{
+	border: 0;
+}
+input{
+	margin: 5px 1px 5px 2px;
+	width: 40%;
+}
